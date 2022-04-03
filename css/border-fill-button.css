@@ -1,0 +1,41 @@
+.border-fill-button {
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #fff;
+  padding: 24px 48px;
+  border: 2px solid #fff;
+  position: relative;
+}
+
+.border-fill-button:hover {
+  cursor: pointer;
+}
+
+.border-fill-button::before,
+.border-fill-button::after {
+  content: "";
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  border: inherit;
+  transition: all 0.5s;
+}
+
+.border-fill-button::before {
+  top: -10px;
+  left: -10px;
+  border-width: 2px 0 0 2px;
+}
+
+.border-fill-button::after {
+  bottom: -10px;
+  right: -10px;
+  border-width: 0 2px 2px 0;
+}
+
+.border-fill-button:hover::before,
+.border-fill-button:hover::after {
+  width: calc(100% + 18px);
+  height: calc(100% + 18px);
+}
