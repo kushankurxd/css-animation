@@ -7,12 +7,16 @@
 body {
   background-color: #c69b7b;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
   height: 100vh;
 }
 
-.spacer {
-  margin: 32px 0;
+.spacer-vertical {
+  margin: 64px 0;
+}
+
+.spacer-horizontal {
+  margin: 0 32px;
 }
