@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="./css/spinner-loading.css" />
     <link rel="stylesheet" href="./css/spinner-loading.css" />
     <link rel="stylesheet" href="./css/card-zoom.css" />
+    <link rel="stylesheet" href="./css/hamburger-close.css" />
   </head>
   <body class="animated-background">
     <div>
@@ -42,5 +43,26 @@
         <h3 class="card-zoom-title">Jessica</h3>
       </div>
     </div>
+
+    <div class="spacer-horizontal"></div>
+
+    <div>
+      <input type="checkbox" id="menu-toggle" />
+      <label for="menu-toggle" class="hamburger-close">
+        <span class="bun bun-top">
+          <span class="bun-crust bun-crust-top"></span>
+        </span>
+        <span class="bun bun-bottom">
+          <span class="bun-crust bun-crust-bottom"></span>
+        </span>
+      </label>
+    </div>
   </body>
+
+  <script>
+    const hamburgerEl = document.getElementById("menu-toggle");
+    setInterval(() => {
+      hamburgerEl.click();
+    }, 1000);
+  </script>
 </html>
