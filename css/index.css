@@ -20,3 +20,9 @@ body {
 .spacer-horizontal {
   margin: 0 62px;
 }
+
+@media (max-width: 1024px) {
+  body {
+    flex-direction: column;
+  }
+}
